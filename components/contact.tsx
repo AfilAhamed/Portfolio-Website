@@ -21,13 +21,6 @@ export function Contact() {
           >
             Email me
           </a>
-          <a
-            href="/afil-ahamed-flutter-developer.pdf"
-            download
-            className="rounded-full border border-foreground/20 px-7 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
-          >
-            Download Resume
-          </a>
         </div>
       </div>
     </section>

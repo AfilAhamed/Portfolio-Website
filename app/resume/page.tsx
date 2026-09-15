@@ -1,11 +1,12 @@
 import Link from 'next/link'
+import Image from 'next/image'
+
+const pages = ['/resume-pages/page-1.png', '/resume-pages/page-2.png']
 
 export default function ResumePage() {
-  const resumePath = '/resume.pdf'
-
   return (
-    <main className="min-h-screen bg-background px-4 pb-10 pt-28 sm:px-6">
-      <div className="mx-auto flex max-w-6xl flex-col gap-6">
+    <main className="min-h-screen bg-background px-3 pb-10 pt-24 sm:px-6 sm:pt-28">
+      <div className="mx-auto flex max-w-6xl flex-col gap-5 sm:gap-6">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <Link
@@ -23,20 +24,35 @@ export default function ResumePage() {
           </div>
 
           <a
-            href={resumePath}
-            download="Afil Ahamed - Flutter Developer.pdf"
+            href="/api/download-resume"
             className="inline-flex w-fit items-center justify-center rounded-full border border-foreground/20 px-5 py-2.5 text-sm text-foreground transition-colors hover:bg-foreground hover:text-background"
           >
             Download Resume
           </a>
         </div>
 
-        <section className="overflow-hidden rounded-2xl border border-border/60 bg-card shadow-sm">
-          <iframe
-            src={`${resumePath}#toolbar=1&navpanes=0&view=FitH`}
-            title="Afil Ahamed Flutter Developer Resume"
-            className="h-[calc(100vh-210px)] min-h-[680px] w-full"
-          />
+        <section
+          aria-label="Resume preview"
+          className="rounded-2xl border border-border/60 bg-muted/20 p-2 shadow-sm sm:p-4"
+        >
+          <div className="mx-auto flex max-w-[850px] flex-col gap-3">
+            {pages.map((page, index) => (
+              <div
+                key={page}
+                className="overflow-hidden rounded-lg bg-white shadow-sm"
+              >
+                <Image
+                  src={page}
+                  alt={`Afil Ahamed Flutter Developer Resume page ${index + 1}`}
+                  width={1191}
+                  height={1684}
+                  priority={index === 0}
+                  className="block h-auto w-full"
+                  sizes="(max-width: 640px) 100vw, 850px"
+                />
+              </div>
+            ))}
+          </div>
         </section>
       </div>
     </main>

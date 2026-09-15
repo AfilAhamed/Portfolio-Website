@@ -51,7 +51,7 @@ export function SiteNav() {
           href="/resume"
           className="rounded-full border border-foreground/20 px-4 py-2 text-sm text-foreground transition-colors hover:bg-foreground hover:text-background"
         >
-          Download Resume
+          Resume
         </a>
       </nav>
     </header>
