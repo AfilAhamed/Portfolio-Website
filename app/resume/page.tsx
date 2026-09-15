@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 export default function ResumePage() {
-  const resumePath = '/Afil%20Ahamed%20-%20Flutter%20Developer.pdf'
+  const resumePath = '/resume.pdf'
 
   return (
     <main className="min-h-screen bg-background px-4 pb-10 pt-28 sm:px-6">
