@@ -54,7 +54,7 @@ export function Hero() {
             <dt className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
               Apps Shipped
             </dt>
-            <dd className="mt-2 font-serif text-3xl text-foreground">10+</dd>
+            <dd className="mt-2 font-serif text-3xl text-foreground">25+</dd>
           </div>
           <div>
             <dt className="text-xs uppercase tracking-[0.2em] text-muted-foreground">

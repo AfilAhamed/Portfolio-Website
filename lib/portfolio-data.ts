@@ -1,7 +1,6 @@
 export const profile = {
   name: 'Afil Ahamed',
   title: 'Flutter Developer',
-  location: 'Malappuram, Kerala, India',
   email: 'afilahamed19@gmail.com',
   summary:
     'A self-taught Flutter Developer with 3 years of hands-on experience building high-quality, cross-platform mobile applications. Skilled in Flutter, Dart, Firebase, and REST APIs, with a passion for continuous learning and contributing to innovative, growth-oriented projects.',
@@ -14,6 +13,7 @@ export const experiences = [
     period: 'Oct 2025 – Aug 2026',
     description:
       'Developed and maintained Flutter applications for the Dubai market, focusing on responsive UI, RTL support, advanced property filtering, REST API integration, feature development, testing, and debugging.',
+    url: 'https://www.linkedin.com/company/akarat-uae/posts/?feedView=all',
   },
   {
     role: 'Flutter Developer',
@@ -21,6 +21,7 @@ export const experiences = [
     period: 'May 2024 – Sep 2025',
     description:
       'Built and maintained high-performance mobile apps with responsive UI/UX, collaborated on user-friendly features, and contributed through code reviews, debugging, and Git.',
+    url: 'https://totalx.io/',
   },
   {
     role: 'Flutter Developer',
@@ -28,6 +29,7 @@ export const experiences = [
     period: 'Apr 2023 – Apr 2024',
     description:
       'Gained hands-on experience in Flutter development through diverse projects, enhancing technical proficiency and performance.',
+    url: 'https://bridgeon.in/',
   },
 ]
 
@@ -126,4 +128,3 @@ export const projects = [
   },
 ]
 
-export const languages = ['Malayalam', 'English']

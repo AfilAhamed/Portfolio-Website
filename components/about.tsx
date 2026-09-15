@@ -1,4 +1,4 @@
-import { profile, languages } from '@/lib/portfolio-data'
+import { profile } from '@/lib/portfolio-data'
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
@@ -15,7 +15,7 @@ export function About() {
         <div>
           <SectionLabel>About</SectionLabel>
           <h2 className="font-serif text-3xl leading-tight text-foreground md:text-4xl">
-            Building mobile products with care and craft.
+            Experienced Flutter engineer focused on quality.
           </h2>
         </div>
         <div className="space-y-8">
@@ -23,24 +23,11 @@ export function About() {
             {profile.summary}
           </p>
           <p className="text-pretty leading-relaxed text-muted-foreground">
-            From marketplaces to e-learning platforms, I focus on performant
-            architecture, elegant UI, and details that make apps feel effortless
-            to use — across both iOS and Android.
+            From concept to architecture, development, and deployment — I
+            engineer scalable systems, refined interfaces, and production-ready
+            solutions that deliver seamless, high-performance experiences across
+            platforms.
           </p>
-          <dl className="grid grid-cols-1 gap-6 border-t border-border pt-8 sm:grid-cols-2">
-            <div>
-              <dt className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                Based in
-              </dt>
-              <dd className="mt-2 text-foreground">{profile.location}</dd>
-            </div>
-            <div>
-              <dt className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                Languages
-              </dt>
-              <dd className="mt-2 text-foreground">{languages.join(' · ')}</dd>
-            </div>
-          </dl>
         </div>
       </div>
     </section>

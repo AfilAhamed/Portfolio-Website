@@ -26,7 +26,16 @@ export function Experience() {
                 <h3 className="font-serif text-xl text-foreground">
                   {exp.role}
                 </h3>
-                <p className="mt-1 text-sm text-primary">{exp.company}</p>
+                <a
+                  href={exp.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 inline-flex text-sm text-primary transition-opacity hover:opacity-80"
+                  aria-label={`Visit ${exp.company}`}
+                >
+                  {exp.company}
+                  <span aria-hidden="true" className="ml-1">↗</span>
+                </a>
               </div>
               <p className="text-pretty leading-relaxed text-muted-foreground">
                 {exp.description}

@@ -34,7 +34,6 @@ export function Footer() {
         <p className="font-serif text-base text-foreground">
           Afil Ahamed
         </p>
-        <p>{profile.location}</p>
         <p>
           © {new Date().getFullYear()} · Crafted with Flutter passion
         </p>
