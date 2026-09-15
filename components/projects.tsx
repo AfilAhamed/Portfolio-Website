@@ -2,10 +2,10 @@ import { projects } from '@/lib/portfolio-data'
 
 export function Projects() {
   return (
-    <section id="work" className="border-t border-border px-6 py-20 md:py-28">
+    <section id="projects" className="border-t border-border px-6 py-20 md:py-28">
       <div className="mx-auto max-w-6xl">
         <p className="mb-4 text-xs uppercase tracking-[0.3em] text-muted-foreground">
-          Selected Work
+          Projects
         </p>
         <h2 className="mb-14 font-serif text-3xl leading-tight text-foreground md:text-4xl">
           Projects I&apos;m proud of.

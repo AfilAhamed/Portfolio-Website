@@ -44,6 +44,7 @@ export const skillGroups = [
       'REST API',
       'Dio',
       'Animations',
+      'Lazy Loading',
       'Firebase',
     ],
   },
@@ -64,6 +65,7 @@ export const skillGroups = [
       'Localization',
       'Google Map',
       'OLA Map',
+      'Third-Party Integrations',
     ],
   },
   {
@@ -72,7 +74,7 @@ export const skillGroups = [
   },
   {
     label: 'Testing & Tools',
-    items: ['Unit Testing', 'Widget Testing', 'Postman', 'Git', 'GitHub', 'VS Code', 'Android Studio'],
+    items: ['Unit Testing', 'Widget Testing', 'Postman', 'Git', 'GitHub', 'VS Code', 'Android Studio', 'Xcode', 'Cursor', 'Windsurf'],
   },
 ]
 

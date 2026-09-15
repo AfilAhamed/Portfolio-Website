@@ -18,7 +18,7 @@ export function Hero() {
       <div className="mx-auto max-w-4xl text-center">
         <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-1.5 text-xs uppercase tracking-[0.25em] text-muted-foreground">
           <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-          Available for new projects
+          Available for new opportunities
         </p>
         <h1 className="text-balance font-serif text-5xl leading-[1.05] tracking-tight text-foreground md:text-7xl">
           {profile.name}
@@ -27,14 +27,14 @@ export function Hero() {
           {profile.title} · Crafting refined cross-platform experiences
         </p>
         <p className="mx-auto mt-8 max-w-2xl text-pretty leading-relaxed text-foreground/80">
-          {profile.summary}
+          Flutter Developer focused on building polished, reliable cross-platform applications with thoughtful UI, strong performance, and practical integrations.
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <a
-            href="#work"
+            href="#projects"
             className="rounded-full bg-foreground px-7 py-3 text-sm font-medium text-background transition-opacity hover:opacity-90"
           >
-            View selected work
+            View my projects
           </a>
           <a
             href={`mailto:${profile.email}`}
@@ -58,9 +58,9 @@ export function Hero() {
           </div>
           <div>
             <dt className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
-              Platforms
+              Focus
             </dt>
-            <dd className="mt-2 font-serif text-3xl text-foreground">iOS · Android</dd>
+            <dd className="mt-2 font-serif text-3xl text-foreground">Mobile · Web</dd>
           </div>
         </dl>
       </div>
