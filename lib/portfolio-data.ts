@@ -91,12 +91,12 @@ export const projects = [
     detailedDescription:
       'Safari Cars is a marketplace mobile application designed for buying and selling cars, bikes, and accessories. The experience combines secure sign-in, efficient listing discovery, location-based features, payments, short-form vehicle content, and direct navigation into shared listings. I worked across the Flutter application to build responsive experiences and connect these features into a smooth end-to-end marketplace flow.',
     highlights: [
-      'Google & Apple Sign-In for secure authentication',
-      'Improved speed by 40% with lazy loading',
-      'Ola Maps for real-time location tracking',
-      'Razorpay for seamless in-app payments',
-      'Reels section for short vehicle videos',
-      'Deep linking and dynamic listing filters',
+      'Implemented Google Sign-In and Apple Sign-In to provide secure and convenient user authentication.',
+      'Improved app speed by 40% through lazy loading, optimizing data fetching and overall application performance.',
+      'Integrated Ola Maps to support real-time location tracking and help users discover vehicles based on location.',
+      'Added Razorpay to provide secure and seamless in-app payment processing.',
+      'Developed a Reels section for showcasing short vehicle videos and making vehicle discovery more engaging.',
+      'Enabled Deep Linking for direct navigation from shared links and built dynamic filters for brand, model, year, fuel type, ownership, and transmission.',
     ],
     availability: 'Play Store · App Store',
     stores: {
@@ -114,12 +114,12 @@ export const projects = [
     detailedDescription:
       'Hash India is a B2B e-commerce application focused on making product discovery, purchasing, order management, and account-based buying straightforward for business customers. The application includes a category-driven catalog, cart workflows, brand filters, real-time order tracking, an admin-allocated credit system, and secure payment processing. Performance was also a key focus, with dependency injection and efficient instance reuse helping reduce memory usage.',
     highlights: [
-      'Category-based catalog for easy discovery',
-      'Reduced memory usage by 50% via dependency injection',
-      'Cart management with add, remove & update',
-      'Real-time order tracking for transparency',
-      'Admin-allocated credit system for purchases',
-      'HDFC Payment Gateway integration',
+      'Developed a category-based product catalog to make browsing and product discovery easier for B2B customers.',
+      'Reduced memory usage by 50% through Dependency Injection and efficient instance reuse across the application.',
+      'Implemented cart management that allows users to add, remove, and update products before purchase.',
+      'Enabled real-time order tracking so users can monitor order progress with better transparency.',
+      'Added a credit system that allows customers to make purchases using credits allocated by the admin.',
+      'Implemented secure payment and transaction management using the HDFC Payment Gateway for reliable checkout.',
     ],
     availability: 'Play Store · App Store',
     stores: {
@@ -137,12 +137,12 @@ export const projects = [
     detailedDescription:
       'Reliant is an e-learning application built around structured chapter and lesson-based courses. Learners can access video lessons, study materials, paid courses, and renewal options while course access is managed based on payment and expiry status. The app also combines Razorpay payments, YouTube video streaming, PDF resources, and assessments, including chapter-wise exams and a final exam at the end of a course.',
     highlights: [
-      'Chapter & lesson-wise course structure',
-      'Subscription, expiry & course renewal management',
-      'Razorpay integration for secure purchases',
-      'Access control & locking for unpaid courses',
-      'YouTube video streaming for lessons',
-      'Chapter-wise exams and final assessments',
+      'Developed a structured course experience with content organized chapter-wise and lesson-wise for easier learning.',
+      'Implemented course purchasing, subscription expiry handling, expired-course sections, and renewal options for continued access.',
+      'Integrated Razorpay to support secure course purchases and payment processing.',
+      'Implemented course access control and locking mechanisms to restrict unpaid or expired courses.',
+      'Integrated YouTube video streaming to deliver online lessons directly within the learning experience.',
+      'Provided PDF study materials and added chapter-wise exams along with a final exam at the end of the course.',
     ],
     availability: 'Play Store · App Store',
     stores: {
