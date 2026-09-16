@@ -27,13 +27,13 @@ export function Projects() {
             >
               <article className="grid overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 group-hover:-translate-y-0.5 group-hover:border-primary/40 group-hover:shadow-lg">
                 <div className="grid gap-8 p-6 sm:p-8 md:grid-cols-[0.82fr_1.18fr] md:p-10">
-                  <div className="relative min-h-64 overflow-hidden rounded-xl border border-border bg-secondary/30 md:min-h-[320px]">
+                  <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl border border-border bg-secondary/30">
                     <Image
                       src={project.image}
                       alt={`${project.name} app preview`}
                       fill
                       sizes="(min-width: 768px) 40vw, 90vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                      className="object-contain transition-transform duration-500 group-hover:scale-[1.015]"
                     />
                   </div>
 
