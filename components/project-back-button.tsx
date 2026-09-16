@@ -1,17 +1,14 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 
 export function ProjectBackButton() {
-  const router = useRouter()
-
   return (
-    <button
-      type="button"
-      onClick={() => router.back()}
+    <Link
+      href="/#projects"
       className="inline-flex text-sm text-muted-foreground transition-colors hover:text-foreground"
     >
       ← Back to projects
-    </button>
+    </Link>
   )
 }

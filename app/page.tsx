@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useLayoutEffect } from 'react'
 import { SiteNav } from '@/components/site-nav'
 import { Hero } from '@/components/hero'
 import { About } from '@/components/about'
@@ -10,23 +10,22 @@ import { Projects } from '@/components/projects'
 import { Contact, Footer } from '@/components/contact'
 
 export default function Page() {
-  useEffect(() => {
+  useLayoutEffect(() => {
     const savedPosition = sessionStorage.getItem('projects-scroll-position')
     if (!savedPosition) return
 
     sessionStorage.removeItem('projects-scroll-position')
+    const position = Number(savedPosition)
+    if (!Number.isFinite(position)) return
 
-    const restorePosition = () => {
-      const position = Number(savedPosition)
-      if (Number.isFinite(position)) {
-        window.scrollTo({ top: position, left: 0, behavior: 'auto' })
-      }
-    }
+    // Restore the exact position before the first paint so returning from a
+    // project detail page does not visibly jump to the top or re-animate.
+    window.history.scrollRestoration = 'manual'
+    window.scrollTo(0, position)
 
-    // Let the returned page finish laying out before restoring the exact position.
-    requestAnimationFrame(() => {
-      requestAnimationFrame(restorePosition)
-    })
+    // Keep the requested #projects URL while preserving the exact prior
+    // scroll position rather than triggering another hash scroll.
+    window.history.replaceState(null, '', '/#projects')
   }, [])
 
   return (
