@@ -83,7 +83,7 @@ export const skillGroups = [
 export const projects = [
   {
     slug: 'safari-cars',
-    image: '/projects/safari-cars.svg',
+    image: '/projects/safari-cars.webp',
     name: 'Safari Cars App',
     tagline: 'Buy & sell cars, bikes, and accessories.',
     description:
@@ -106,7 +106,7 @@ export const projects = [
   },
   {
     slug: 'hash-india',
-    image: '/projects/hash-india.svg',
+    image: '/projects/hash-india.webp',
     name: 'Hash India',
     tagline: 'B2B e-commerce application.',
     description:
@@ -129,7 +129,7 @@ export const projects = [
   },
   {
     slug: 'reliant',
-    image: '/projects/reliant.svg',
+    image: '/projects/reliant.webp',
     name: 'Reliant',
     tagline: 'E-learning / education platform.',
     description:
