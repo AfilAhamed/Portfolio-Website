@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import { ProjectBackButton } from '@/components/project-back-button'
 import { notFound } from 'next/navigation'
 import { projects } from '@/lib/portfolio-data'
 
@@ -20,12 +20,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   return (
     <main className="min-h-screen bg-background px-6 pb-16 pt-28 text-foreground md:pt-32">
       <div className="mx-auto max-w-5xl">
-        <Link
-          href="/#projects"
-          className="inline-flex text-sm text-muted-foreground transition-colors hover:text-foreground"
-        >
-          ← Back to projects
-        </Link>
+        <ProjectBackButton />
 
         <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-card">
           <div className="relative aspect-[16/8] w-full bg-secondary/30">

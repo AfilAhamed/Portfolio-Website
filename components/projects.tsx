@@ -17,6 +17,12 @@ export function Projects() {
             <Link
               key={project.slug}
               href={`/projects/${project.slug}`}
+              onClick={() => {
+                sessionStorage.setItem(
+                  'projects-scroll-position',
+                  String(window.scrollY),
+                )
+              }}
               className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4"
             >
               <article className="grid overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 group-hover:-translate-y-0.5 group-hover:border-primary/40 group-hover:shadow-lg">
