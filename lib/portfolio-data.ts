@@ -88,6 +88,8 @@ export const projects = [
     tagline: 'Buy & sell cars, bikes, and accessories.',
     description:
       'A marketplace mobile application to buy and sell vehicles, with secure authentication, real-time location, and in-app payments.',
+    detailedDescription:
+      'Safari Cars is a marketplace mobile application designed for buying and selling cars, bikes, and accessories. The experience combines secure sign-in, efficient listing discovery, location-based features, payments, short-form vehicle content, and direct navigation into shared listings. I worked across the Flutter application to build responsive experiences and connect these features into a smooth end-to-end marketplace flow.',
     highlights: [
       'Google & Apple Sign-In for secure authentication',
       'Improved speed by 40% with lazy loading',
@@ -97,6 +99,10 @@ export const projects = [
       'Deep linking and dynamic listing filters',
     ],
     availability: 'Play Store · App Store',
+    stores: {
+      playStore: 'https://play.google.com/store/apps/details?id=com.safari.cars',
+      appStore: 'https://apps.apple.com/in/app/safari-cars/id6743789664',
+    },
   },
   {
     slug: 'hash-india',
@@ -105,6 +111,8 @@ export const projects = [
     tagline: 'B2B e-commerce application.',
     description:
       'A B2B e-commerce app with secure payments, real-time order tracking, and optimized performance powered by Firebase.',
+    detailedDescription:
+      'Hash India is a B2B e-commerce application focused on making product discovery, purchasing, order management, and account-based buying straightforward for business customers. The application includes a category-driven catalog, cart workflows, brand filters, real-time order tracking, an admin-allocated credit system, and secure payment processing. Performance was also a key focus, with dependency injection and efficient instance reuse helping reduce memory usage.',
     highlights: [
       'Category-based catalog for easy discovery',
       'Reduced memory usage by 50% via dependency injection',
@@ -114,6 +122,10 @@ export const projects = [
       'HDFC Payment Gateway integration',
     ],
     availability: 'Play Store · App Store',
+    stores: {
+      playStore: 'https://play.google.com/store/apps/details?id=com.hashindia',
+      appStore: 'https://apps.apple.com/in/app/india/id6738429901',
+    },
   },
   {
     slug: 'reliant',
@@ -122,6 +134,8 @@ export const projects = [
     tagline: 'E-learning / education platform.',
     description:
       'An e-learning app offering chapter-wise and lesson-wise courses, video lessons, study materials, paid access, and course renewal.',
+    detailedDescription:
+      'Reliant is an e-learning application built around structured chapter and lesson-based courses. Learners can access video lessons, study materials, paid courses, and renewal options while course access is managed based on payment and expiry status. The app also combines Razorpay payments, YouTube video streaming, PDF resources, and assessments, including chapter-wise exams and a final exam at the end of a course.',
     highlights: [
       'Chapter & lesson-wise course structure',
       'Subscription, expiry & course renewal management',
@@ -131,6 +145,10 @@ export const projects = [
       'Chapter-wise exams and final assessments',
     ],
     availability: 'Play Store · App Store',
+    stores: {
+      playStore: 'https://play.google.com/store/apps/details?id=com.reliant_user',
+      appStore: 'https://apps.apple.com/in/app/reliant-edu/id6745386729',
+    },
   },
 ]
 

@@ -22,7 +22,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <div className="mx-auto max-w-5xl">
         <ProjectBackButton />
 
-        <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-card">
+        <article className="mt-8 overflow-hidden rounded-2xl border border-border bg-card">
           <div className="relative aspect-[16/8] w-full bg-secondary/30">
             <Image
               src={project.image}
@@ -42,11 +42,36 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               {project.name}
             </h1>
             <p className="mt-3 text-lg text-primary">{project.tagline}</p>
-            <p className="mt-7 max-w-3xl text-pretty text-lg leading-relaxed text-foreground/80">
-              {project.description}
-            </p>
 
-            <div className="mt-10 border-t border-border pt-8">
+            <div className="mt-8 space-y-5 text-base leading-8 text-foreground/80">
+              {project.detailedDescription.split('. ').map((sentence, index, sentences) => (
+                <p key={`${project.slug}-paragraph-${index}`}>
+                  {sentence.trim()}
+                  {index < sentences.length - 1 && '.'}
+                </p>
+              ))}
+            </div>
+
+            <div className="mt-10 flex flex-wrap gap-3 border-t border-border pt-8">
+              <a
+                href={project.stores.playStore}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-foreground hover:text-background"
+              >
+                View on Google Play ↗
+              </a>
+              <a
+                href={project.stores.appStore}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-foreground hover:text-background"
+              >
+                View on App Store ↗
+              </a>
+            </div>
+
+            <div className="mt-12 border-t border-border pt-8">
               <h2 className="font-serif text-2xl">Project details</h2>
               <ul className="mt-6 grid gap-4 sm:grid-cols-2">
                 {project.highlights.map((highlight) => (
@@ -64,7 +89,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               </ul>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </main>
   )
