@@ -5,16 +5,14 @@ import { useLayoutEffect } from 'react'
 export function ProjectDetailScroll() {
   useLayoutEffect(() => {
     const root = document.documentElement
-    const previousScrollBehavior = root.style.scrollBehavior
-
-    // The project card click already disables smooth scrolling. This is a
-    // second safeguard so the detail page opens at the top without animation.
+    // Open the detail page at the top without triggering the site's smooth
+    // scrolling behavior. Remove the temporary override immediately after.
     root.style.scrollBehavior = 'auto'
     window.history.scrollRestoration = 'manual'
     window.scrollTo(0, 0)
 
     const frame = window.requestAnimationFrame(() => {
-      root.style.scrollBehavior = previousScrollBehavior
+      root.style.removeProperty('scroll-behavior')
     })
 
     return () => window.cancelAnimationFrame(frame)

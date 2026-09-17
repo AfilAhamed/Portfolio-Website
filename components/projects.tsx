@@ -23,9 +23,8 @@ export function Projects() {
                   'projects-scroll-position',
                   String(window.scrollY),
                 )
-                // Project-to-detail navigation should never use the site's global
-                // smooth scrolling. Keep the transition instant.
-                document.documentElement.style.scrollBehavior = 'auto'
+                // The detail page handles its own instant top positioning.
+                // Don't override the site's global smooth-scroll setting here.
               }}
               className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4"
             >

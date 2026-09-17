@@ -22,7 +22,6 @@ export default function Page() {
     // the site's global smooth scrolling so the browser cannot animate from
     // the top to the saved project position.
     const root = document.documentElement
-    const previousScrollBehavior = root.style.scrollBehavior
     root.style.scrollBehavior = 'auto'
     window.history.scrollRestoration = 'manual'
     window.scrollTo(0, position)
@@ -31,7 +30,7 @@ export default function Page() {
     window.history.replaceState(null, '', '/#projects')
 
     const frame = window.requestAnimationFrame(() => {
-      root.style.scrollBehavior = previousScrollBehavior
+      root.style.removeProperty('scroll-behavior')
     })
 
     return () => window.cancelAnimationFrame(frame)
