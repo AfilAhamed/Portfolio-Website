@@ -17,11 +17,15 @@ export function Projects() {
             <Link
               key={project.slug}
               href={`/projects/${project.slug}`}
+              scroll={false}
               onClick={() => {
                 sessionStorage.setItem(
                   'projects-scroll-position',
                   String(window.scrollY),
                 )
+                // Project-to-detail navigation should never use the site's global
+                // smooth scrolling. Keep the transition instant.
+                document.documentElement.style.scrollBehavior = 'auto'
               }}
               className="group block rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4"
             >

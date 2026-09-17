@@ -18,14 +18,23 @@ export default function Page() {
     const position = Number(savedPosition)
     if (!Number.isFinite(position)) return
 
-    // Restore the exact position before the first paint so returning from a
-    // project detail page does not visibly jump to the top or re-animate.
+    // Restore the exact position before the first paint. Temporarily disable
+    // the site's global smooth scrolling so the browser cannot animate from
+    // the top to the saved project position.
+    const root = document.documentElement
+    const previousScrollBehavior = root.style.scrollBehavior
+    root.style.scrollBehavior = 'auto'
     window.history.scrollRestoration = 'manual'
     window.scrollTo(0, position)
 
-    // Keep the requested #projects URL while preserving the exact prior
-    // scroll position rather than triggering another hash scroll.
+    // Keep the requested #projects URL without triggering another hash scroll.
     window.history.replaceState(null, '', '/#projects')
+
+    const frame = window.requestAnimationFrame(() => {
+      root.style.scrollBehavior = previousScrollBehavior
+    })
+
+    return () => window.cancelAnimationFrame(frame)
   }, [])
 
   return (

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { ProjectBackButton } from '@/components/project-back-button'
+import { ProjectDetailScroll } from '@/components/project-detail-scroll'
 import { notFound } from 'next/navigation'
 import { projects } from '@/lib/portfolio-data'
 
@@ -18,7 +19,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   if (!project) notFound()
 
   return (
-    <main className="min-h-screen bg-background px-6 pb-16 pt-28 text-foreground md:pt-32">
+    <>
+      <ProjectDetailScroll />
+      <main className="min-h-screen bg-background px-6 pb-16 pt-28 text-foreground md:pt-32">
       <div className="mx-auto max-w-5xl">
         <ProjectBackButton />
 
@@ -91,6 +94,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           </div>
         </article>
       </div>
-    </main>
-  )
+      </main>
+    </>
 }
