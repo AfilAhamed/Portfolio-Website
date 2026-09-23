@@ -150,5 +150,31 @@ export const projects = [
       appStore: 'https://apps.apple.com/in/app/reliant-edu/id6745386729',
     },
   },
-]
+,
 
+  {
+    slug: 'citi-smart',
+    image: '/projects/citi-smart.svg',
+    name: 'Citi Smart',
+    tagline: 'Real estate, contracting & service platform.',
+    description:
+      'A mobile platform for browsing and purchasing land by location, listing properties, booking services, and accessing professional pack-and-move solutions.',
+    detailedDescription:
+      'Citi Smart is an all-in-one mobile application for real estate, contracting, and employee services. The platform allows users to browse and purchase land based on location, list properties, connect with buyers and sellers, book services, and access professional home-shifting solutions. It brings property discovery and contracting-related needs together in a single mobile experience with a user-friendly interface and seamless navigation.',
+    highlights: [
+      'Implemented OTPless for secure and convenient user authentication.',
+      'Integrated Ola Maps to support location-based property discovery and help users explore properties based on their location.',
+      "Used Firebase as the backend for supporting the application's data and services.",
+      'Allows users to browse and explore land and properties based on location and find suitable options for purchase.',
+      'Enables users to list their own properties and connect with potential buyers and sellers through the platform.',
+      'Provides service booking options so users can access and manage required services conveniently.',
+      'Offers professional pack-and-move services to help users manage home shifting and transportation requirements.',
+      'Provides access to contracting and civil construction-related services for different project requirements.',
+    ],
+    availability: 'iOS · Android',
+    stores: {
+      playStore: '',
+      appStore: '',
+    },
+  },
+]

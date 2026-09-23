@@ -55,24 +55,30 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               ))}
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-3 border-t border-border pt-8">
-              <a
-                href={project.stores.playStore}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-foreground hover:text-background"
-              >
-                View on Google Play ↗
-              </a>
-              <a
-                href={project.stores.appStore}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-foreground hover:text-background"
-              >
-                View on App Store ↗
-              </a>
-            </div>
+            {(project.stores.playStore || project.stores.appStore) && (
+              <div className="mt-10 flex flex-wrap gap-3 border-t border-border pt-8">
+                {project.stores.playStore && (
+                  <a
+                    href={project.stores.playStore}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-foreground hover:text-background"
+                  >
+                    View on Google Play ↗
+                  </a>
+                )}
+                {project.stores.appStore && (
+                  <a
+                    href={project.stores.appStore}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center rounded-full border border-foreground/20 px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-foreground hover:text-background"
+                  >
+                    View on App Store ↗
+                  </a>
+                )}
+              </div>
+            )}
 
             <div className="mt-12 border-t border-border pt-8">
               <h2 className="font-serif text-2xl">Project details</h2>

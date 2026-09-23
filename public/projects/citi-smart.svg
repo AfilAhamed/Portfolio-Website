@@ -1,0 +1,36 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="40" fill="#0A0A0A"/>
+  <rect x="70" y="70" width="1460" height="760" rx="32" fill="#111111" stroke="#2B2B2B" stroke-width="2"/>
+  <circle cx="1310" cy="170" r="210" fill="#171717"/>
+  <circle cx="1310" cy="170" r="140" fill="#1D1D1D"/>
+  <path d="M80 680C300 540 470 620 680 500C850 403 980 456 1150 350C1288 264 1380 255 1518 210" stroke="#3A3A3A" stroke-width="3"/>
+  <path d="M80 740C320 600 490 690 705 565C860 475 1005 535 1180 420C1300 341 1410 325 1518 310" stroke="#232323" stroke-width="2"/>
+  <rect x="170" y="170" width="430" height="500" rx="34" fill="#F2F2F2"/>
+  <rect x="205" y="212" width="360" height="42" rx="10" fill="#1A1A1A"/>
+  <rect x="205" y="278" width="250" height="26" rx="8" fill="#777777"/>
+  <rect x="205" y="335" width="360" height="170" rx="18" fill="#D8D8D8"/>
+  <circle cx="300" cy="412" r="56" fill="#8A8A8A"/>
+  <path d="M282 412L298 428L330 393" stroke="#F2F2F2" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="205" y="540" width="140" height="28" rx="9" fill="#333333"/>
+  <rect x="360" y="540" width="205" height="28" rx="9" fill="#AAAAAA"/>
+  <rect x="205" y="592" width="230" height="18" rx="7" fill="#B7B7B7"/>
+  <g transform="translate(770 170)">
+    <rect width="610" height="530" rx="42" fill="#F6F6F6"/>
+    <rect x="50" y="55" width="510" height="56" rx="14" fill="#171717"/>
+    <circle cx="92" cy="83" r="12" fill="#F6F6F6"/>
+    <rect x="125" y="74" width="180" height="18" rx="7" fill="#BDBDBD"/>
+    <rect x="50" y="145" width="235" height="170" rx="20" fill="#D5D5D5"/>
+    <rect x="325" y="145" width="235" height="170" rx="20" fill="#E2E2E2"/>
+    <path d="M120 225C120 198 140 178 167 178C194 178 214 198 214 225C214 268 167 300 167 300C167 300 120 268 120 225Z" fill="#6F6F6F"/>
+    <circle cx="167" cy="224" r="16" fill="#F6F6F6"/>
+    <path d="M395 216H480" stroke="#555555" stroke-width="12" stroke-linecap="round"/>
+    <path d="M395 250H525" stroke="#999999" stroke-width="12" stroke-linecap="round"/>
+    <rect x="50" y="350" width="510" height="90" rx="20" fill="#171717"/>
+    <rect x="80" y="383" width="120" height="24" rx="8" fill="#F6F6F6"/>
+    <rect x="430" y="378" width="90" height="32" rx="10" fill="#565656"/>
+    <rect x="50" y="470" width="220" height="22" rx="8" fill="#8C8C8C"/>
+    <rect x="50" y="505" width="320" height="16" rx="6" fill="#B4B4B4"/>
+  </g>
+  <text x="150" y="770" fill="#F6F6F6" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700">Citi Smart</text>
+  <text x="150" y="815" fill="#9A9A9A" font-family="Arial, Helvetica, sans-serif" font-size="24" letter-spacing="2">REAL ESTATE • CONTRACTING • SERVICES</text>
+</svg>
