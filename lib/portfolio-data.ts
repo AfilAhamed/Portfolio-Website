@@ -150,7 +150,6 @@ export const projects = [
       appStore: 'https://apps.apple.com/in/app/reliant-edu/id6745386729',
     },
   },
-,
 
   {
     slug: 'citi-smart',
