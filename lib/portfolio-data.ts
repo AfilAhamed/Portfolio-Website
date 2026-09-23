@@ -150,6 +150,7 @@ export const projects = [
       appStore: 'https://apps.apple.com/in/app/reliant-edu/id6745386729',
     },
   },
+,
 
   {
     slug: 'citi-smart',
@@ -170,10 +171,10 @@ export const projects = [
       'Offers professional pack-and-move services to help users manage home shifting and transportation requirements.',
       'Provides access to contracting and civil construction-related services for different project requirements.',
     ],
-    availability: 'iOS · Android',
+    availability: 'Play Store · App Store',
     stores: {
-      playStore: '',
-      appStore: '',
+      playStore: 'https://play.google.com/store/apps/details?id=com.citismart',
+      appStore: 'https://apps.apple.com/in/app/citi-smart/id6745120545',
     },
   },
 ]
