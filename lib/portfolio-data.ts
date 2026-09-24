@@ -106,7 +106,7 @@ export const projects = [
   },
   {
     slug: 'hash-india',
-    image: '/projects/hash-india.webp',
+    image: '/projects/hash-india.jpg',
     name: 'Hash India',
     tagline: 'B2B e-commerce application.',
     description:
@@ -150,10 +150,11 @@ export const projects = [
       appStore: 'https://apps.apple.com/in/app/reliant-edu/id6745386729',
     },
   },
+,
 
   {
     slug: 'citi-smart',
-    image: '/projects/citi-smart.svg',
+    image: '/projects/citi-smart.png',
     name: 'Citi Smart',
     tagline: 'Real estate, contracting & service platform.',
     description:
