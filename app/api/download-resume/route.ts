@@ -1,3 +1,5 @@
+export const runtime = 'nodejs'
+
 import { readFile } from 'node:fs/promises'
 import { join } from 'node:path'
 

@@ -16,7 +16,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = await params
   const project = projects.find((item) => item.slug === slug)
 
-  if (!project) notFound()
+  if (!project) return notFound()
 
   return (
     <>
