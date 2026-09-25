@@ -151,6 +151,7 @@ export const projects = [
     },
   },
 
+
   {
     slug: 'citi-smart',
     image: '/projects/citi-smart.png',
@@ -174,6 +175,32 @@ export const projects = [
     stores: {
       playStore: 'https://play.google.com/store/apps/details?id=com.citismart',
       appStore: 'https://apps.apple.com/in/app/citi-smart/id6745120545',
+    },
+  },
+
+  {
+    slug: 'helix-piller',
+    image: '/projects/helix-piller.svg',
+    name: 'Helix Piller',
+    tagline: 'Wholesale fashion & stock ordering app.',
+    description:
+      'A wholesale fashion application for shop owners to discover fashion products, place bulk orders, and manage purchases with flexible credits and rewards.',
+    detailedDescription:
+      'Helix Piller is a wholesale fashion application tailored for shop owners to explore the latest trends and streamline stock ordering. The app allows users to browse a wide collection of fashion products, place bulk orders, manage their purchases, and use flexible credit and reward options to support their buying needs.',
+    highlights: [
+      'Implemented a credit system based on purchases and admin-allocated credits, allowing users to purchase products using available credits alongside other payment options.',
+      'Added a star-point reward system where users earn points through product purchases and can use accumulated points to purchase eligible star-point products without additional payment.',
+      'Implemented product variants to showcase the same product in different options, including multiple colors.',
+      'Added cart functionality that allows users to add multiple products and manage quantities before placing an order.',
+      'Implemented real-time order status updates with a status chart so users can clearly track the progress of their purchases.',
+      'Integrated Razorpay payment gateway to support secure online payment processing for product purchases.',
+      'Added a favorites feature so users can save products for quick access and future consideration.',
+      'Implemented real-time push notifications using Firebase Cloud Messaging (FCM) to keep users updated about orders and other important activities.',
+    ],
+    availability: 'Mobile Application',
+    stores: {
+      playStore: '',
+      appStore: '',
     },
   },
 ]
