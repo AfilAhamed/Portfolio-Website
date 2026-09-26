@@ -197,10 +197,10 @@ export const projects = [
       'Added a favorites feature so users can save products for quick access and future consideration.',
       'Implemented real-time push notifications using Firebase Cloud Messaging (FCM) to keep users updated about orders and other important activities.',
     ],
-    availability: 'Mobile Application',
+    availability: 'Play Store · App Store',
     stores: {
-      playStore: '',
-      appStore: '',
+      playStore: 'https://play.google.com/store/apps/details?id=com.helixpiller&hl=en',
+      appStore: 'https://apps.apple.com/in/app/helix-piller/id6738555965',
     },
   },
 ]
